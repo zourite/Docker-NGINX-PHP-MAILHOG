@@ -3,6 +3,7 @@ version: "3"
 services:
     nginx:
         image: nginx:1.14-alpine
+        restart: always
         ports:
             - 81:80
         volumes:
@@ -12,6 +13,7 @@ services:
     php:
         build: ./docker/php
         #image: php:7.2-fpm-alpine
+        restart: always
         volumes:
             - ./src:/var/www/
             - ./docker/php/php.ini:/usr/local/etc/php/conf.d/php.ini:ro
@@ -19,6 +21,7 @@ services:
 
     mysql:
         image: mysql:5.7
+        restart: always
         ports:
             - 3306:3306
         environment:
@@ -30,5 +33,6 @@ services:
             - ./docker/volumes/mysql:/var/lib/mysql
     mailhog:
         image: mailhog/mailhog:v1.0.0
+        restart: always
         ports:
             - 8025:8025

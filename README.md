@@ -45,7 +45,7 @@ the command.*
 nginx is an HTTP and reverse proxy server, a mail proxy server, and a generic
 TCP/UDP proxy server.
 
-- **Port:** 80
+- **Port:** 81
 
 ### PHP-FPM
 
@@ -63,28 +63,6 @@ MySQL is an open-source relational database management system (RDBMS).
 - **Username:** web
 - **Password:** pass
 - **Database:** web
-
-### Redis
-
-Redis is an open source, in-memory data structure store, used as a database,
-cache and message broker.
-
-- **Port:** 6379
-
-### Memcached
-
-Memcached is a free & open source, high-performance, distributed memory object caching system.
-
-- **Port:** 11211
-
-### phpMyAdmin
-
-phpMyAdmin is a free software tool written in PHP, intended to handle the
-administration of MySQL over the Web
-
-- **Port:** 8080
-- **Username:** web
-- **Password:** pass
 
 ### Mailhog
 

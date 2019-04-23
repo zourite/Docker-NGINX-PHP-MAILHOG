@@ -11,13 +11,4 @@ RUN set -ex; \
     ; \
     \
     docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr; \
-    docker-php-ext-install gd mysqli opcache zip; \
-    \
-    runDeps="$( \
-    scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/lib/php/extensions \
-    | tr ',' '\n' \
-    | sort -u \
-    | awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' \
-    )"; \
-    apk add --virtual .wordpress-phpexts-rundeps $runDeps; \
-    apk del .build-deps
+    docker-php-ext-install gd mysqli opcache zip;

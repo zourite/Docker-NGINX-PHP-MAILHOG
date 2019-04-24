@@ -1,5 +1,7 @@
 # Simple Docker Web Stack
 
+[Inspirate From : Benecdictdudel](https://github.com/benedictdudel/simple-docker-web-stack)
+
 This is an unofficial, open-source and community-driven boilerplate for Web
 based projects that are running on Docker-Compose. It's an attempt of
 standardizing and making it easier to bootstrap web applications ready for
